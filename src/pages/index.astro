@@ -1,5 +1,6 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import { Like } from '../components/Like';
+import ReactComponent from '../components/ReactComponent';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -7,5 +8,9 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<!-- <Welcome /> -->
+	 <!-- <Like postId="1" /> -->
+	   <ReactComponent >
+        <h2 slot={'title-slot'}>React Component</h2>
+    </ReactComponent>
 </Layout>
